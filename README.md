@@ -1,12 +1,10 @@
-# DecenMessage
+# Staking_subnet
 
-This Solidity program encapsulates the code for an decentralized messaging system, where anyone can send an anonymous message to a
-particular address, and they can read the message.
+This repository contains two smart contracts: one, a simple ERC20 contract to generate a new ERC20 token and use its various functionalities, and the other, a vault used to stake/store your ERC20 tokens.
 
 ## Description
 
-This solidity program offers anyone to write a message to a particular wallet address on the same blockchain anonymously,and then the user,
-to whom the messgage was sent, can read the message.
+These Solidity programs allow you to create a new ERC20 token and store it in a vault contract. These two contracts are then deployed on a custom Avalanche Subnet.
 
 ### Getting Started
 
@@ -33,16 +31,8 @@ npx hardhat node
 and then run:
 
 ```
-npx hardhat run --network localhost scripts/deploy.js
+npx hardhat run --network mySubnet scripts/deploy.js
 ```
-
-and then open another terminal to interact with the Token smart contract, type in the terminal
-
-```
-npm run dev
-```
-
-to launch the front-end.
 
 ### Authors
 
